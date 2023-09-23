@@ -1,0 +1,258 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+#canvas {
+    background-color: #272727; /* Set a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    width: 100%; /* Make it responsive to its container width */
+    max-width: 100%; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline styling */
+    margin: 0 auto; /* Center the canvas horizontally */
+}
+
+/* Apply a background color and font to the entire page */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+.lista {
+    background-color: #333; /* Background color for the navigation bar */
+    color: white;
+    text-align: center; /* Center-align the links horizontally */
+    padding: 10px 0; /* Add padding for spacing */
+    display: flex; /* Use flexbox to center both horizontally and vertically */
+    justify-content: center; /* Center-align horizontally */
+    align-items: center; /* Center-align vertically */
+  }
+  
+  .fjalet {
+    display: flex; /* Use inline-block for child elements */
+  }
+  
+  .fjalet a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white;
+    margin: 0 20px; /* Add spacing between links */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold; /* Optionally, make the text bold */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+  }
+  
+  .fjalet a:hover {
+    color: #007BFF; /* Change link color on hover (adjust as needed) */
+  }
+  .about-all {
+    display: flex;
+    flex-direction: column; /* Display content in a vertical column */
+    align-items: center;
+    padding: 40px;
+    text-align: center; /* Center-align the content */
+  }
+  .about-section {
+     /* Add spacing between the "ABOUT" text and content for phones */
+    display: flex;
+    margin-left: 30vh;
+}
+  
+    
+  .Text-Container {
+    text-align: center; /* Center-align the "ABOUT" text */
+  }
+  
+  .Text-Container div {
+    font-size: 36px; /* Font size for the "ABOUT" text */
+    font-weight: bold; /* Optionally, make the text bold */
+    color: #000000; /* Text color */
+  }
+  
+  
+  .drejtimi {
+    flex: 1; /* Allow this div to grow and take remaining space */
+    padding: 20px; /* Add padding for spacing */
+    position: relative;
+    margin-left: 30vh;
+  }
+  
+  .octa {
+    height: 300px; /* Adjust the size of the octagonal shape */
+    width: 300px;
+    background-image: url('/download.jpeg'); /* Replace 'your-background-image.jpg' with your image file path */
+    background-size: cover; /* Cover the entire octagon with the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+  }
+  
+  .text {
+    font-size: 18px; /* Font size for the text */
+    margin-left: 0px; /* Add spacing between the octagon and text */
+    text-align: left; /* Left-align the text */
+    color: #333; /* Text color */
+    padding-top: 15px;
+    width: 300px;
+  }
+  
+  /* Optional: Add a border around the octagon */
+  .octa {
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+  }
+  
+  /* Style the chart */
+  #myChart {
+    border-radius: 10px;
+    width: 500px; 
+    position: relative;
+    margin-right: 50vh;
+}
+.portofolio {
+    background-color: rgb(230, 230, 230);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #portofolio-text {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .profileImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between images */
+    justify-items: center; /* Center-align images horizontally */
+    align-items: center; /* Center-align images vertically */
+  }
+  
+  .profileImages img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+  
+    height: 400px; /* Maintain aspect ratio */
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .profileImages a {
+    display: inline-block;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+  }
+  
+  .profileImages a:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+  }
+  .project h3{
+    margin-top: 20px;
+  }
+  
+  /* Media query for screens that are for phones (e.g., screens with a max-width of 768px) */
+  @media screen and (max-width: 768px) {
+    .lista {
+      text-align: left; /* Left-align the links on smaller screens */
+      white-space: normal; /* Allow child elements to wrap to a new line */
+    }
+  
+    .fjalet {
+      display: block; /* Use block display for child elements (vertical stacking) */
+    }
+  
+    .fjalet a {
+      display: block; /* Display links as blocks for vertical stacking */
+      margin: 10px 0; /* Add spacing between vertically stacked links */
+   
+    }
+    
+    
+.about-all {
+  display: flex;
+  flex-direction: column; /* Display content in a vertical column */
+  align-items: center;
+  padding: 40px;
+  text-align: center; /* Center-align the content */
+
+}
+
+.about-section {
+    display: block;
+  margin-top: 20px; /* Add spacing between the "ABOUT" text and content for phones */
+    align-items: center;
+    margin-left: -0vh;
+}
+.drejtimi{
+    left: 25vh;
+}
+
+#myChart {
+  display: block;
+  width: 400px;
+}
+.about-section h3{
+  width: 100%;
+}      
+
+}
+  
+      
+    /* Style the contact section */
+#contact {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contacte-first {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contacte-sec p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
