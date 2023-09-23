@@ -81,7 +81,7 @@ body {
   .octa {
     height: 300px; /* Adjust the size of the octagonal shape */
     width: 300px;
-    background-image: url('/download.jpeg'); /* Replace 'your-background-image.jpg' with your image file path */
+    background-image: url('download.jpeg'); /* Replace 'your-background-image.jpg' with your image file path */
     background-size: cover; /* Cover the entire octagon with the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
   }
