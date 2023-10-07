@@ -12,7 +12,7 @@ class Topi {
 
   draw() {
     ctx.beginPath();
-    ctx.arc(this.position.x, this.position.y, 30, 0, 2 * Math.PI);
+    ctx.arc(this.position.x, this.position.y, 10, 0, 2 * Math.PI);
     ctx.fillStyle = this.color; 
     ctx.fill();
   }
@@ -94,7 +94,7 @@ const rrethi4 = new Topi({
   });
   const rrethi8 = new Topi({
     position: {
-      x: 1900,
+      x: canvas.width -20,
       y: 500,
     },
     velocity: {
@@ -105,8 +105,8 @@ const rrethi4 = new Topi({
   });
   const rrethi7 = new Topi({
       position: {
-        x: 900,
-        y: 900,
+        x: canvas.width,
+        y: canvas.height-20,
       },
       velocity: {
         x: -3,
@@ -116,7 +116,7 @@ const rrethi4 = new Topi({
     });
     const rrethi6 = new Topi({
       position: {
-        x: 600,
+        x: canvas.width-100,
         y: 400,
       },
       velocity: {
@@ -136,6 +136,7 @@ function SCREEN() {
   for (let i = 0; i < balls.length; i++) {
       const ball = balls[i];
       ball.update();
+      
 
       if (ball.position.x >= canvas.width || ball.position.x <= 0) {
           ball.velocity.x *= -1;
@@ -155,7 +156,7 @@ function SCREEN() {
           const dy = ball1.position.y - ball2.position.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 30 + 30) {
+          if (distance < 10 + 10) {
               ball1.velocity.x *= -1;
               ball1.velocity.y *= -1;
               ball2.velocity.x *= -1;
@@ -232,5 +233,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
   });
 });
+
+
 
 
