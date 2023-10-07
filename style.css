@@ -1,104 +1,100 @@
-/* Reset some default styles to ensure consistency */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-
+    overflow-x: hidden;
 }
 #canvas {
-    background-color: #272727; /* Set a background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-    width: 100%; /* Make it responsive to its container width */
-    max-width: 100%; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline styling */
-    margin: 0 auto; /* Center the canvas horizontally */
+    background-color: #1a2233;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
 }
 
-/* Apply a background color and font to the entire page */
 body {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
 .lista {
-    background-color: #333; /* Background color for the navigation bar */
+    background-color: #323b61; 
     color: white;
-    text-align: center; /* Center-align the links horizontally */
-    padding: 10px 0; /* Add padding for spacing */
-    display: flex; /* Use flexbox to center both horizontally and vertically */
-    justify-content: center; /* Center-align horizontally */
-    align-items: center; /* Center-align vertically */
+    text-align: center; 
+    padding: 10px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   
   .fjalet {
-    display: flex; /* Use inline-block for child elements */
+    display: flex; 
   }
   
   .fjalet a {
-    text-decoration: none; /* Remove underlines from links */
+    text-decoration: none; 
     color: white;
-    margin: 0 20px; /* Add spacing between links */
-    font-size: 18px; /* Adjust font size as needed */
-    font-weight: bold; /* Optionally, make the text bold */
-    transition: color 0.3s; /* Add a smooth color transition on hover */
+    margin: 0 20px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: color 0.3s;
   }
   
   .fjalet a:hover {
-    color: #007BFF; /* Change link color on hover (adjust as needed) */
+    color: #007BFF;
   }
   .about-all {
     display: flex;
-    flex-direction: column; /* Display content in a vertical column */
+    flex-direction: column;
     align-items: center;
     padding: 40px;
-    text-align: center; /* Center-align the content */
+    text-align: center; 
   }
   .about-section {
-     /* Add spacing between the "ABOUT" text and content for phones */
     display: flex;
     margin-left: 30vh;
 }
   
     
   .Text-Container {
-    text-align: center; /* Center-align the "ABOUT" text */
+    text-align: center;
   }
   
   .Text-Container div {
-    font-size: 36px; /* Font size for the "ABOUT" text */
-    font-weight: bold; /* Optionally, make the text bold */
-    color: #000000; /* Text color */
+    font-size: 36px; 
+    font-weight: 10;
+    font-family: 'Roboto', sans-serif;
+
+    color: #000000;
   }
   
   
   .drejtimi {
-    flex: 1; /* Allow this div to grow and take remaining space */
-    padding: 20px; /* Add padding for spacing */
+    flex: 1; 
+    padding: 20px; 
     position: relative;
     margin-left: 30vh;
   }
   
   .octa {
-    height: 300px; /* Adjust the size of the octagonal shape */
+    height: 300px; 
     width: 300px;
-    background-image: url('download.jpeg'); /* Replace 'your-background-image.jpg' with your image file path */
-    background-size: cover; /* Cover the entire octagon with the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-image: url('/tuxpi.com.1696685016.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
   }
   
   .text {
-    font-size: 18px; /* Font size for the text */
-    margin-left: 0px; /* Add spacing between the octagon and text */
-    text-align: left; /* Left-align the text */
-    color: #333; /* Text color */
+    font-size: 18px; 
+    margin-left: 0px;
+    text-align: left;
+    color: #333; 
     padding-top: 15px;
     width: 300px;
   }
   
-  /* Optional: Add a border around the octagon */
   .octa {
-    border: 2px solid #007BFF;
-    border-radius: 10px;
+    border-radius: 40px;
   }
   
   /* Style the chart */
@@ -109,31 +105,31 @@ body {
     margin-right: 50vh;
 }
 .portofolio {
-    background-color: rgb(230, 230, 230);
-    padding: 40px;
+  background-color: #f2f2f5; 
+  padding: 40px;
     text-align: center;
   }
   
   #portofolio-text {
     font-size: 36px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 10;
+    font-family: 'Roboto',sans-serif;
     color: #333;
     margin-bottom: 20px;
   }
   
   .profileImages {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Spacing between images */
-    justify-items: center; /* Center-align images horizontally */
-    align-items: center; /* Center-align images vertically */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
   }
   
   .profileImages img {
-    max-width: 100%; /* Ensure images don't exceed their container */
+    max-width: 100%; 
   
-    height: 400px; /* Maintain aspect ratio */
+    height: 400px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -141,46 +137,45 @@ body {
   
   .profileImages a {
     display: inline-block;
-    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+    transition: transform 0.3s;
   }
   
   .profileImages a:hover {
-    transform: scale(1.05); /* Scale up the image on hover */
+    transform: scale(1.05); 
   }
   .project h3{
     margin-top: 20px;
   }
   
-  /* Media query for screens that are for phones (e.g., screens with a max-width of 768px) */
   @media screen and (max-width: 768px) {
     .lista {
-      text-align: left; /* Left-align the links on smaller screens */
-      white-space: normal; /* Allow child elements to wrap to a new line */
+      text-align: left; 
+      white-space: normal; 
     }
   
     .fjalet {
-      display: block; /* Use block display for child elements (vertical stacking) */
+      display: block; 
     }
   
     .fjalet a {
-      display: block; /* Display links as blocks for vertical stacking */
-      margin: 10px 0; /* Add spacing between vertically stacked links */
+      display: block; 
+      margin: 10px 0; 
    
     }
     
     
 .about-all {
   display: flex;
-  flex-direction: column; /* Display content in a vertical column */
+  flex-direction: column;
   align-items: center;
   padding: 40px;
-  text-align: center; /* Center-align the content */
+  text-align: center;
 
 }
 
 .about-section {
     display: block;
-  margin-top: 20px; /* Add spacing between the "ABOUT" text and content for phones */
+  margin-top: 20px;
     align-items: center;
     margin-left: -0vh;
 }
@@ -199,7 +194,6 @@ body {
 }
   
       
-    /* Style the contact section */
 #contact {
     background-color: #333;
     color: white;
